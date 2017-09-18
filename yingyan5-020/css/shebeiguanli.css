@@ -1,0 +1,173 @@
+.sbgl {
+	width: 1200px;
+	height:700px;
+	background: url(../img/tmbg.png);
+	margin: 14px auto;
+	border-radius: 5px;
+	/*overflow-y: scroll;
+	overflow-x: hidden;*/
+}
+
+.shebeiliebiao {
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	color: #8BC1DA;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	text-align: center;
+	background: url(../img/tubg.png);
+}
+
+.sb-quanbu {
+	width: 1200px;
+	height: 620px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-radius: 5px;
+	margin: 10px auto;
+}
+
+.sb-zt {
+	width: 1170px;
+	height: 420px;
+	border-radius: 5px;
+	background: url(../img/tubg.png);
+	margin: 10px auto;
+}
+
+.sb-p {
+	width: 1170px;
+	height: 34px;
+	color: #8BC1DA;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	text-align: center;
+	background: url(../img/tubg.png);
+	line-height: 34px;
+}
+
+.biubiu1 {
+	width: 270px;
+	height: 40px;
+	background: #0d80d0;
+	display: block;
+	float: right;
+	margin-top: 12px;
+	color: #FEFEFE;
+	position: relative;
+	left: -74px;
+	border-radius: 5px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.title1 {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #8BC1DA;
+	font-size: 13px;
+}
+
+.table6 {
+	width: 1170px;
+	height: 150px;
+	position: relative;
+	top: 15px;
+}
+
+.table6 .nis {
+	color: #0D80D0;
+	text-decoration: underline;
+	font-family: '微软雅黑';
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.quyu {
+	width: 1170px;
+	height: 80px;
+	display: none;
+}
+.quyu1 {
+	width: 1170px;
+	height: 80px;
+	display: none;
+}
+.qbquy {
+	width: 18px;
+	margin-left: 30px;
+	height: 18px;
+	margin-top: 10px;
+}
+
+.qbquy-label {
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #8BC1DA;
+	position: relative;
+	top: -3px;
+	margin-top: 15px;
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+#xinjianshebei {
+	display: none;
+	margin-top: 10px;
+}
+
+#guanlianniu {
+	width: 100px;
+	margin-left: 68%;
+	cursor: pointer;
+	float: left;
+}
+#xjsbpz{
+
+	cursor: pointer;
+	
+}
+
+#xinjianshebeipeizhi
+{
+	display: none;
+	position: absolute;
+	left: -15%;
+}
+.peizhi
+{
+	color: #0f7cc9;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	text-decoration: underline;
+}
+.quzh
+{
+	width: 250px;
+	border:none;
+	height: 30px;
+	color:#0f7cc9 ;
+	line-break: 30px;
+	background: url(../img/tubg.png);
+}
+
+.quzh::-webkit-input-placeholder
+{
+	color: #86bad2;
+	text-align: center;
+	font-family: "微软雅黑";
+}
+.quch::-ms-input-placeholder
+{
+	color: #86bad2;
+	text-align: center;
+	font-family: "微软雅黑";
+}

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/shouye.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jiankongguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/shujuchaxun.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/shebeiguanli2.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/sbzt.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<link rel="stylesheet" type="text/css" href="css/yanpanpingtai.css" />
+		<link rel="stylesheet" type="text/css" href="css/pingtaiguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/shebeiguanli.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>设备管理</title>
+
+	</head>
+
+	<body>
+		<!--背景-->
+
+		<img src="img/bg.png" class="background" />
+		<!--设备管理主体-->
+		<div class="sbgl">
+
+			<div class="zz1">
+				<p class="zz-p1">设备管理</p>
+				
+                   <div  id="guanlianniu">
+					<img src="img/icon_add.png" class="ass" />
+					<p class="zz-p2">新建设备</p>
+					</div>
+				 <div id="xjsbpz" style="float: left;margin-left: 10px;" >
+					<img src="img/icon_add.png" class="ass" />
+					<p class="zz-p2" >新建设备配置</p>
+					</div>
+
+			
+				<img src="img/del.png" style="float: right;margin-top: 5px;margin-right: 20px;" onclick="window.location.href='xitongguanli.html'" />
+			</div>
+
+			<div class="sb-quanbu">
+
+				<div class="sb-zt" style="height: 440px;">
+
+					<p class="sb-p">设备列表</p>
+
+					<div class="chaxunkuan">
+						<form method="get">
+
+							<label style="margin-left: 34px;">手机号码</label><input type="text" />
+							<label style="margin-left: 30px;">查询字段</label><input type="text" />
+							<label style="margin-left: 30px;">区县</label>
+							<select name="">
+								<option value=""></option>
+							</select>
+							<br />
+							<!--第二行-->
+							<label style="margin-left: 34px;">设备类型</label><input type="text" />
+							<label style="margin-left: 30px;">场所类型</label>
+							<select name="">
+								<option value=""></option>
+							</select>
+							<label style="margin-left: 30px;">运行状态</label>
+							<select name="">
+								<option value=""></option>
+							</select>
+							<!--第三行-->
+							<br />
+							<label style="margin-left: 34px;">安装状态</label>
+							<select name="">
+								<option value=""></option>
+
+							</select>
+							<label style="margin-left: 30px;">GPS</label>
+							<select name="">
+								<option value=""></option>
+							</select>
+							<span class="biubiu1">搜索</span>
+						</form>
+					</div>
+
+					<!--表格-->
+					<table border="1" cellspacing="0" cellpadding="0" class="table6" >
+						<tr>
+							<th>设备编号</th>
+							<th>设备名称</th>
+							<th>在线状态</th>
+							<th>安装状态</th>
+							<th>安装时间</th>
+							<th>断线时间</th>
+							<th>联系电话</th>
+							<th>地图</th>
+							<th>区县</th>
+							<th>朝向</th>
+							<th>场所类型</th>
+							<th>位置照片</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>未知</td>
+							<td>在线</td>
+							<td>正式启用</td>
+							<td>2017-01-12 12:00:00</td>
+							<td>2017-01-12 12:00:00</td>
+							<td>15678908909</td>
+							<td>地图</td>
+							<td>玄武区杨安县</td>
+							<td>朝南</td>
+							<td>未知</td>
+							<td class="nis">查看</td>
+
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>未知</td>
+							<td>在线</td>
+							<td>正式启用</td>
+							<td>2017-01-12 12:00:00</td>
+							<td>2017-01-12 12:00:00</td>
+							<td>15678908909</td>
+							<td>地图</td>
+							<td>玄武区杨安县</td>
+							<td>朝南</td>
+							<td>未知</td>
+							<td class="nis">查看</td>
+
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>未知</td>
+							<td>在线</td>
+							<td>正式启用</td>
+							<td>2017-01-12 12:00:00</td>
+							<td>2017-01-12 12:00:00</td>
+							<td>15678908909</td>
+							<td>地图</td>
+							<td>玄武区杨安县</td>
+							<td>朝南</td>
+							<td>未知</td>
+							<td class="nis">查看</td>
+
+						</tr>
+					</table>
+					<!--分页的table样式-->
+					<table border="0" cellspacing="0" cellpadding="0" class="fenye2" >
+						<tr class="noh">
+							<td>
+								<</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>></td>
+									<td class="tiaozhuandao"><label>跳转到</label>
+										<input type="text" class="inp" />
+										<label class="go">GO</label></td>
+						</tr>
+
+					</table>
+				</div>
+
+				<!--表格1-->
+				<div class="baioge3" style="height: 350px;margin-top:50px;">
+					<p class="diu" style="background: url(img/tubg.png);">设备状态</p>
+					<table border="1" cellspacing="0" cellpadding="0" style="height: 220px;width: 1170px;" class="table9">
+
+						<tr>
+							<th rowspan="2" style="width: 250px;">区县</th>
+							<th colspan="2" style="width: 250px;">室外机</th>
+							<th colspan="2" style="width: 250px;">室内机</th>
+							<th colspan="2" style="width: 250px;">车载</th>
+
+						</tr>
+						<tr>
+
+							<th>在线</th>
+							<th>离线</th>
+							<th>在线</th>
+							<th>离线</th>
+							<th>在线</th>
+							<th>离线</th>
+
+						</tr>
+						<tr>
+							<th>农机</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+
+						</tr>
+						<tr>
+							<th>农机</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+
+						</tr>
+
+						<tr>
+							<th>农机</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+
+						</tr>
+						<tr>
+							<th>农机</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+							<th>100</th>
+
+						</tr>
+
+					</table>
+					<!--分页的table样式-->
+					<table border="0" cellspacing="0" cellpadding="0" class="fenye">
+						<tr class="noh">
+							<td>
+								<</td>
+									<td>1</td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>></td>
+									<td class="tiaozhuandao"><label>跳转到</label>
+										<input type="text" class="inp" />
+										<label class="go">GO</label></td>
+						</tr>
+
+					</table>
+				</div>
+				<!--查看方式-->
+				<div class="baioge3" style="position: relative;top: 50px;height: 520px;">
+					<p class="diu">设备采集信息统计</p>
+					<div class="chal">
+						<span style="color: #8BC1DA;margin-left: 20px;font-size: 15px;text-align: right;width:100px;">
+						查看方式：
+					</span >
+					<span style="color: #ffffff;font-size: 12px;background: #0d80d0;border-radius: 5px;border-radius: 5px;border: 1px solid rgba(255,255,255,0.2);" class="qiehuan">
+						全部
+					</span>
+						<span style="color: #8BC1DA;font-size: 12px;background: transparent;border-radius: 5px;border: 1px solid rgba(255,255,255,0.2);margin-left: 15px;cursor: pointer;" class="qiehuan1">
+						区域
+					</span>
+
+						<div class="quyu">
+
+							<form method="get">
+								<input type="checkbox" class="qbquy" id="qbqy1" /><label class="qbquy-label" for="qbqy1">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy2" /><label class="qbquy-label" for="qbqy2">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy3" /><label class="qbquy-label" for="qbqy3">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy4" /><label class="qbquy-label" for="qbqy4">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy5" /><label class="qbquy-label" for="qbqy5">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy6" /><label class="qbquy-label" for="qbqy6">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy7" /><label class="qbquy-label" for="qbqy7">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy8" /><label class="qbquy-label" for="qbqy8">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy9" /><label class="qbquy-label" for="qbqy9">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy10" /><label class="qbquy-label" for="qbqy10">全部区域</label>
+								<br />
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+							</form>
+						</div>
+					</div>
+
+					<!--分隔提示-->
+					<div class="fgts">
+						<p class="zz-p1">设备状态统计</p>
+						<p class="zz-pl1">此数据更新于2017-02-12 12:00:00</p>
+					</div>
+
+					<!--表格-->
+					<table border="1" cellspacing="0" cellpadding="0" class="table9">
+						<tr>
+							<th>设备类型</th>
+							<th>总数</th>
+							<th>在线</th>
+							<th>离线</th>
+
+						</tr>
+						<tr>
+							<td>室外</td>
+							<td>300</td>
+							<td>300</td>
+							<td>300</td>
+
+						</tr>
+						<tr>
+							<td>室内</td>
+							<td>300</td>
+
+							<td>300</td>
+							<td>300</td>
+
+						</tr>
+						<tr>
+							<td>车载</td>
+							<td>300</td>
+							<td>300</td>
+
+							<td>300</td>
+
+						</tr>
+						<tr>
+							<td>总量</td>
+							<td>300</td>
+							<td>300</td>
+							<td>300</td>
+
+						</tr>
+
+					</table>
+					<div class="fgts">
+						<p class="zz-p1">后台数据量统计</p>
+						<p class="zz-p1" style="width: 240px;float: right;margin-right: 10px;">此数据更新于2017-02-12 12:00:00</p>
+					</div>
+
+					<!--表格-->
+					<table border="1" cellspacing="0" cellpadding="0" class="table10" style="height: 80px;">
+						<tr>
+							<th>终端轨迹</th>
+							<th>热点轨迹</th>
+							<th>历史连接记录</th>
+							<th>连接记录</th>
+							<th>虚拟日志</th>
+
+						</tr>
+						<tr>
+							<td>200</td>
+							<td>300</td>
+							<td>300</td>
+							<td>300</td>
+							<td>300</td>
+
+						</tr>
+
+					</table>
+				</div>
+				
+				<div class="baioge100" style="position: relative;top: 60px;height: 420px;" id="caiji1">
+					<p class="diu" style="background: url(img/tubg.png);">设备采集信息统计1</p>
+					
+					<div class="chal1">
+						<span style="color: #8BC1DA;margin-left: 20px;font-size: 15px;text-align: right;width:100px;">
+						查看方式：
+					</span >
+					<span style="color: #ffffff;font-size: 12px;background: #0d80d0;border-radius: 5px;border-radius: 5px;border: 1px solid rgba(255,255,255,0.2);" class="qiehuan3">
+						全部
+					</span>
+						<span style="color: #8BC1DA;font-size: 12px;background: transparent;border-radius: 5px;border: 1px solid rgba(255,255,255,0.2);margin-left: 15px;cursor: pointer;" class="qiehuan4">
+						区域
+					</span>
+
+						<div class="quyu1">
+
+							<form method="get">
+								<input type="checkbox" class="qbquy" id="qbqy11" /><label class="qbquy-label" for="qbqy11">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy21" /><label class="qbquy-label" for="qbqy21">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy31" /><label class="qbquy-label" for="qbqy31">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy41" /><label class="qbquy-label" for="qbqy41">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy51" /><label class="qbquy-label" for="qbqy51">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy61" /><label class="qbquy-label" for="qbqy61">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy71" /><label class="qbquy-label" for="qbqy71">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy81" /><label class="qbquy-label" for="qbqy81">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy91" /><label class="qbquy-label" for="qbqy91">全部区域</label>
+								<input type="checkbox" class="qbquy" id="qbqy101" /><label class="qbquy-label" for="qbqy101">全部区域</label>
+								<br />
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+								<input type="checkbox" class="qbquy" /><label class="qbquy-label">全部区域</label>
+							</form>
+						</div>
+					</div>
+
+					<!--分隔提示-->
+					<div class="fgts">
+						<p class="zz-p1">后台数据量总数</p>
+						<p class="zz-pl1">此数据更新于2017-02-12 12:00:00</p>
+					</div>
+
+					<!--表格-->
+					<table border="1" cellspacing="0" cellpadding="0" class="table9">
+						<tr>
+							<th>总量</th>
+							<th>今天</th>
+							<th>昨天</th>
+							<th>前天</th>
+							<th>最近7天</th>
+
+						</tr>
+						<tr>
+							<td>终端轨迹</td>
+							<td>300</td>
+							<td>300</td>
+							<td>300</td>
+							<td>100</td>
+
+						</tr>
+						<tr>
+							<td>热点轨迹</td>
+							<td>300</td>
+							<td>100</td>
+							<td>300</td>
+							<td>300</td>
+
+						</tr>
+						<tr>
+							<td>历史连续记录</td>
+							<td>300</td>
+							<td>300</td>
+							<td>100</td>
+							<td>300</td>
+
+						</tr>
+						<tr>
+							<td>连续记录</td>
+							<td>300</td>
+							<td>300</td>
+							<td>100</td>
+							<td>300</td>
+
+						</tr>
+						<tr>
+							<td>虚拟日志</td>
+							<td>300</td>
+							<td>300</td>
+							<td>100</td>
+							<td>300</td>
+
+						</tr>
+
+					</table>
+				</div>
+
+				<!--表格1-->
+				<div class="baioge100" style="position: relative;top: 100px;height: 500px;" id="cipan">
+					<p class="diu" style="background: url(img/tubg.png);">磁盘统计</p>
+
+					<div class="chaxunkuan">
+						<form method="get">
+
+							<!--第三行-->
+
+							<label style="margin-left: 34px;">起始时间</label>
+							<input type="text" style="width: 300px;height: 35px;" />
+							<label style="margin-left: 30px;">结束时间</label>
+							<input type="text" style="width: 300px;height: 35px;" />
+							<span class="biubiu1" style="width: 200px;height: 40px;">搜索</span>
+						</form>
+					</div>
+					<p class="title1">每日入库数据统计（单位：M）</p>
+					<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+					<div id="main6" style="height:400px;position: relative;top: -30px;"></div>
+					<!-- ECharts单文件引入 -->
+					<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+					<script type="text/javascript">
+						// 路径配置
+						require.config({
+							paths: {
+								echarts: 'http://echarts.baidu.com/build/dist'
+							}
+						});
+
+						// 使用
+						require(
+							[
+								'echarts',
+								'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+							],
+							function(ec) {
+								// 基于准备好的dom，初始化echarts图表
+								var myChart = ec.init(document.getElementById('main6'));
+
+								var option = {
+									tooltip: {
+										trigger: 'axis'
+									},
+
+									calculable: true,
+									xAxis: [{
+										type: 'category',
+										boundaryGap: false,
+										data: ['11-19', '11-19', '11-19', '11-19', '11-19']
+									}],
+									yAxis: [{
+										type: 'value'
+									}],
+									series: [{
+										name: '邮件营销',
+										type: 'line',
+										stack: '总量',
+										data: [120, 132, 101, 134, 90, 230, 210]
+									}, {
+										name: '直接访问',
+										type: 'line',
+										stack: '总量',
+										data: [320, 332, 301, 334, 390, 330, 320]
+									}, {
+										name: '搜索引擎',
+										type: 'line',
+										stack: '总量',
+										data: [820, 932, 901, 934, 1290, 1330, 1320]
+									}]
+								};
+
+								// 为echarts对象加载数据 
+								myChart.setOption(option);
+							}
+						);
+					</script>
+
+				</div>
+			</div>
+
+			<!--遮罩-->
+			<div class="zhehza" id="baoqilai">
+
+			</div>
+			<!--隐藏2，新建设备二-->
+			<div class="scnr1" id="xinjianshebei">
+				<div class="zz1" style="width: 450px;">
+					<p class="zz-p1">新建设备</p>
+					<img src="img/del.png" class="del" />
+				</div>
+				<div class="xiabian" style="overflow-x: hidden;overflow-y: scroll;border-bottom: 1px solid rgba(0,0,0,0.3)();">
+					<form method="get">
+						<label>输入设备编号</label><input type="text" placeholder="未知" />
+						<label>设备名称</label><input type="text" placeholder="未知" />
+						<label>原名称</label><input type="text" placeholder="未知" />
+						<label>区划</label><input type="text" placeholder="未知" />
+						<label>详细地址</label><input type="text" placeholder="未知" />
+						<label>联系电话</label><input type="text" placeholder="未知" />
+						<label>朝向</label><input type="text" placeholder="未知" />
+						<label>场所类型</label><input type="text" placeholder="未知" />
+						<label>安装时间</label><input type="text" placeholder="未知" />
+						<label>拆卸时间</label><input type="text" placeholder="未知" />
+						<label>最后连接时间</label><input type="text" placeholder="未知" />
+						<label>维护时间</label><input type="text" placeholder="未知" />
+						<label>最后上传位置</label><input type="text" placeholder="未知" style="width: 200px;" /><span class="shangchuan">上传</span>
+						<label>备注</label><input type="text" placeholder="未知" style="height: 50px;margin-top: 20px;" />
+					</form>
+
+				</div>
+				<div class="xuanzejian" style="margin-top: 15px;">
+					<button class="dada1">取消</button>
+					<button class="dada2">确定</button>
+				</div>
+			</div>
+<!--隐藏2，新建设备配置-->
+			<div class="scnr1" id="xinjianshebeipeizhi" style="width: 800px;">
+				<div class="zz1" style="width: 800px;">
+					<p class="zz-p1">新建设备配置</p>
+					<img src="img/del.png" class="del" />
+				</div>
+				<div style="overflow-y: scroll;height: 350px;">
+				<table border="1" cellspacing="0" cellpadding="0" class="table6" style="width: 750px; margin: 10px auto; background: none;height: 400px;" >
+					<tr style="height: 30px;">
+						<th >名称</th>
+						<th>取值范围</th>
+                        <th>操作</th>
+					</tr>
+					<tr >
+						<td>Imei/Imsi文件包含的最大行数</td>
+						<td><input type="text" placeholder="请输入取值范围" class="quzh"/></td>
+						<td><a href="#" class="peizhi">配置</a></td>
+						
+					</tr>
+					<tr >
+						<td>Imei/Imsi文件包含的最大行数</td>
+						<td><input type="text" placeholder="请输入取值范围" class="quzh"/></td>
+						<td><a href="#" class="peizhi">配置</a></td>
+						
+					</tr>
+					<tr >
+						<td>Imei/Imsi文件包含的最大行数</td>
+						<td><input type="text" placeholder="请输入取值范围" class="quzh"/></td>
+						<td><a href="#" class="peizhi">配置</a></td>
+						
+					</tr>
+					<tr >
+						<td>Imei/Imsi文件包含的最大行数</td>
+						<td><input type="text" placeholder="请输入取值范围" class="quzh"/></td>
+						<td><a href="#" class="peizhi">配置</a></td>
+						
+					</tr>
+					<tr >
+						<td>Imei/Imsi文件包含的最大行数</td>
+						<td><input type="text" placeholder="请输入取值范围" class="quzh"/></td>
+						<td><a href="#" class="peizhi">配置</a></td>
+						
+					</tr>
+					<tr >
+						<td>Imei/Imsi文件包含的最大行数</td>
+						<td><input type="text" placeholder="请输入取值范围" class="quzh"/></td>
+						<td><a href="#" class="peizhi">配置</a></td>
+						
+					</tr>
+				
+				</table>
+				</div>
+				<div class="xuanzejian" style="margin-top: 15px;">
+					<button class="dada1">取消</button>
+					<button class="dada2">确定</button>
+				</div>
+			</div>
+			<!--查看设备详情-->
+			<div class="scnr" id="chakanshebeixiangqing" style="height:630px;">
+				<div class="zz1" style="width: 700px;">
+					<p class="zz-p1">查看设备详情</p>
+					<img src="img/del.png" class="del" />
+				</div>
+				<table border="1" cellspacing="0" cellpadding="0" class="table7">
+					<tr class="bn">
+						<th class="sbxz">设备编号</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">设备名称</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">在线状态</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">安装状态</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">安装时间</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">断线时间</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">联系电话</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">地图（所在位置）</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">区县</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">朝向</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz">场所类型</th>
+						<th>未知</th>
+
+					</tr>
+					<tr>
+						<th class="sbxz" style="border-bottom: none;">位置照片</th>
+						<th style="border-bottom: none;">未知</th>
+
+					</tr>
+				</table>
+			</div>
+
+	</body>
+
+	<script src="js/shebeiguanli.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

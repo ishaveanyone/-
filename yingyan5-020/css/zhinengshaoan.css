@@ -1,0 +1,138 @@
+.znsp {
+	width: 1200px;
+	height: 700px;
+	background: url(../img/tmbg.png);
+	margin: 14px auto;
+	border-radius: 5px;
+}
+
+.chaxunkuan1 {
+	width: 1200px;
+	height: 66px;
+}
+
+.chaxunkuan1 label {
+	color: #8BC1DA;
+	font-family: "微软雅黑";
+	line-height: 66px;
+	font-size: 14px;
+}
+
+.chaxunkuan1 input {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	width: 170px;
+	border-radius: 5px;
+	margin-left: 12px;
+	color: #FEFEFE;
+	padding-left: 15px;
+	height: 30px;
+}
+
+.middle {
+	width: 1200px;
+	z-index: 50;
+	position: relative;
+	top: 20px;
+	height: 250px;
+}
+
+.kuai1 {
+	background: #0d80d0;
+	width: 355px;
+	float: left;
+	height: 200px;
+	margin-left: 40px;
+	border-radius: 10px;
+}
+
+.kuai2 {
+	background: url(../img/huaxiangbg.png);
+	width: 355px;
+	float: left;
+	height: 200px;
+	cursor: pointer;
+	margin-left: 40px;
+	border-radius: 10px;
+}
+
+.kuai1-img1 {
+	width: 70px;
+	height: 70px;
+	margin-top: 60px;
+	float: left;
+	margin-left: 50px;
+}
+
+.kuai1-img2 {
+	width: 80px;
+	height: 80px;
+	margin-top: 60px;
+	float: left;
+	margin-left: 50px;
+}
+
+.miaosu {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #FEFEFE;
+	float: left;
+	margin-left: 30px;
+	margin-top: 75px;
+}
+
+.miaosu1 {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #7dadc4;
+	float: left;
+	margin-left: 30px;
+	margin-top: 75px;
+}
+
+.table4 {
+	width: 1200px;
+	height: 200px;
+	position: relative;
+	top: -15px;
+	border-radius: 3px;
+}
+
+.addrow {
+	width: 1200px;
+	height: 30px;
+	position: relative;
+	top: -15px;
+}
+.addrow .xianyiren{
+	color: #0D80D0;
+	
+	text-decoration: underline;
+}
+
+
+.addrow p {
+	float: left;
+	color: #8BC1DA;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 30px;
+	width: 80px;
+	height: 30px;
+	cursor:pointer;
+	text-align: center;
+	margin-left: 35px;
+}
+
+.addrow a {
+	float: left;
+	color: #8BC1DA;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	width: 110px;
+	cursor: pointer;
+	height: 30px;
+}
+

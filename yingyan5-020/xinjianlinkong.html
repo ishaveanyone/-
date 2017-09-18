@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/shouye.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jiankongguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/shujuchaxun.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/zge.css" />
+		<link rel="stylesheet" type="text/css" href="css/pingtaiguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<link rel="stylesheet" type="text/css" href="css/sbzt.css" />
+		<link rel="stylesheet" type="text/css" href="css/yanpanpingtai.css" />
+		<link rel="stylesheet" type="text/css" href="css/xjlk.css" />
+		<script src="My97DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" src="js/alertJs.js"></script>
+		<title>平台管理</title>
+	</head>
+	<body>
+		<!--背景-->
+		<img src="img/bg.png" class="background" />
+		<!--平台管理主体-->
+		<div class="ptgl">
+
+			<div class="zz1">
+				<p class="zz-p1">新建临控</p>
+				<img src="img/del.png" class="del" id="tiaozhuan" />
+			</div>
+			<!--表格1-->
+			<div class="baiogen1">
+				<p class="klx">被控人信息</p>
+				<form method="get">
+					<label class="xiaola">手机号</label><input type="text" class="lv" id="phone" maxlength="11"/>
+					<label class="xiaola">姓名</label><input type="text" class="lv" id="controlledName" />
+					<label class="xiaola">身份证号</label><input type="text" class="lv" id="idCard"/>
+					<br/>
+					<label class="xiaola">IMEI</label><input type="text" class="lv" id="IMEI" />
+					<label class="xiaola">IMSI</label><input type="text" class="lv" id="IMSI"/>
+				</form>
+			</div>
+			<!--表格2-->
+			<div class="baiogem1">
+				<p class="klx">临控人信息</p>
+				<form action="" method="get">
+					<label class="xiaolam1">临控类别</label>
+					<div class="lvm1" id="linkongleibie">
+						<span style=" color: #86b7cd;">&nbsp;&nbsp;</span>
+					</div>
+					<label class="glm" id="guanli1">管理</label>
+					<label class="xiaola1">轨迹临控接收号码</label>
+					<div class="lvk1" style="background: transparent;" >
+						<div class="lvk1-xianshi" id="show_lkry">
+							&nbsp;&nbsp;&nbsp;<!-- <input type="checkbox" value="" id="weile" /> --><label for="weile"></label>
+						</div>
+					</div>
+					<label class="gl" id="guanli2">管理</label>
+					<label class="xiaolaq1" style="position: relative;top: 40px;">临控区域</label>
+					<div class="lvm1" id="linkongquyu" style="position: relative;top: 35px;">
+						<span style=" color: #86b7cd;">&nbsp;&nbsp;</span>
+					</div>
+					<label class="glm" id="guanli3" style="position: relative;top: 40px;cursor: pointer;">管理</label>
+
+					<label class="xiaola1"style="position: relative;top: 40px;">报警类别</label>
+					<div class="lvk1" id="baojing" style="position: relative;top:40px;">
+						&nbsp;&nbsp;&nbsp;<!-- <input type="radio" id="weile1" style="margin-top: 8px;margin-left: 5px"/>&nbsp; --><label for="weile1"></label>
+					</div>
+					<label class="gl" id="guanli4" style="position: relative;top: 40px;cursor: pointer;">管理</label>
+
+					<label class="xiaolaq1" style="position: relative;top: 60px;" >临控时限</label>
+					<div class="lvl1" id="lksx"  style="position: relative;top:55px;">
+						<span style=" color: #86b7cd;">&nbsp;&nbsp;</span>
+					</div>
+					<label class="xiaola2" style="position: relative;top: 60px;">备注</label>
+					<input type="text" class="lvmn2" style="position: relative;top:55px;" id="beizhu"/>
+				</form>
+				<div class="xuanzeb" style="position: relative;top: 70px;" id="add_btn">
+					<button class="button3m" type="button">取消</button>
+					<button class="button4" type="button">确定</button>
+				</div>
+			</div>
+		</div>
+
+
+		<!--管理临控人员-->
+		<div class="scnr6" id="guanlilinkongrenyuan">
+			<div class="zzd1">
+				<p class="zz-p1 ">管理临控人员</p>
+				<img src="img/del.png" class="del " />
+			</div>
+			<div class="zz-w ">
+				<form method="get" class="form1" id="lkry_form">
+				</form>
+			</div>
+			<div class="xuanzeb ">
+				<button class="buttonm3">取消</button>
+				<button class="button4">确定</button>
+			</div>
+		</div>
+
+		<!--临控类别管理-->
+		<div class="scnr6" id="lklbgl">
+			<div class="zzd1 ">
+				<p class="zz-p1 ">临控类别管理</p>
+				<img src="img/del.png " class="del" />
+			</div>
+
+			<div class="zz-w ">
+				<form method="get" class="form1" id="lklb_form">
+
+				</form>
+			</div>
+			<div class="xuanzeb ">
+				<button class="buttonm3" style="cursor: pointer;">取消</button>
+				<button class="button4">确定</button>
+			</div>
+		</div>
+
+		<!--临控区域管理-->
+		<div class="scnr6" id="lkqygl">
+
+			<div class="zzd1 ">
+				<p class="zz-p1 ">临控区域管理</p>
+				<img src="img/del.png " class="del " />
+			</div>
+
+			<div class="zz-w ">
+				<form method="get" class="form1" id="lkqy_form">
+				</form>
+			</div>
+			<div class="xuanzeb">
+				<button class="buttonm3 ">取消</button>
+				<button class="button4 ">确定</button>
+			</div>
+		</div>
+
+		<!--新建临控人员-->
+		<div class="scnr6" id="xinjian">
+
+			<div class="zzd1">
+				<p class="zz-p1">新建临控人员</p>
+				<img src="img/del.png" class="del" />
+			</div>
+			<div class="zz-w1">
+				<form method="get" class="form1">
+					<label class="name">姓名</label><input type="text" class="zuo1" id="xinjian_username" style="color: #8BC1DA;font-family: '微软雅黑';"/>
+					<label class="name">手机号</label><input type="text" class="zuo1" id="xinjian_phone" style="color: #8BC1DA;font-family: '微软雅黑';" maxlength="11"/>
+					<label class="name">职位</label><input type="text" class="zuo1" id="xinjian_job" style="color: #8BC1DA;font-family: '微软雅黑';"/>
+					<label class="name">年龄</label><input type="text" class="zuo1" id="xinjian_age" style="color: #8BC1DA;font-family: '微软雅黑';"/>
+				</form>
+			</div>
+			<div class="xuanzeb">
+				<button class="button3" style="margin-left: 170px;" id="quxiaoyr">取消</button>
+				<button class="button4" id="quedingry">确定</button>
+			</div>
+		</div>
+		<!--隐藏2，新建临控类别-->
+		<div class="scnr1" id="xinjianlklb">
+			<div class="zzo1">
+				<p class="zz-p1">新建临控类别</p>
+				<img src="img/del.png" class="del" />
+			</div>
+			<div class="xiabian35">
+				<form method="get">
+					<label>名称</label><input type="text" id="xinjian_lk_lb" style="ccolor: #8BC1DA;font-family: '微软雅黑';"/>
+				</form>
+			</div>
+			<div class="xuanzejian" style="margin-top: 15px;">
+				<button class="dadaz1" id="quxiaolb">取消</button>
+				<button class="dada2" id="quedinglb">确定</button>
+			</div>
+		</div>
+		<!--隐藏2，新建临控区域-->
+		<div class="scnr1" id="xinjianlkqy">
+			<div class="zzo1">
+				<p class="zz-p1">新建临控区域</p>
+				<img src="img/del.png" class="del" />
+			</div>
+			<div class="xiabian35">
+				<form method="get">
+					<label>区域名称</label><input type="text" style="color: #8BC1DA;font-family: '微软雅黑';"/>
+				</form>
+			</div>
+			<div class="xuanzejian" style="margin-top: 15px;">
+				<button class="dadaz1" id="quxiaoqy">取消</button>
+				<button class="dada2" id="quedingqy">确定</button>
+			</div>
+		</div>
+		<!--报警类别-->
+		<div class="xiala-baojing" id="baojingleibie">
+			<form method="post" class="baojingleibiem">
+			</form>
+		</div>
+		<!--自定义下拉列表,临控类别-->
+		<div  class="xiala-baojing1" id="baojingleibie1">
+			<ul>
+			</ul>
+
+		</div>
+		<!--自定义下拉列表,临控区域-->
+		<div class="xiala-baojing2" id="baojingleibie2">
+			<ul>
+			</ul>
+		</div>
+		
+		<!--自定义下拉列表,临控时限-->
+		<div class="xiala-baojing3" id="baojingleibie3">
+			<ul>
+				<li>七天</li>
+				<li>两周</li>
+				<li>一个月</li>
+				<li>一年</li>
+				<li>永久</li>
+			</ul>
+		</div>
+		<!--管理报警类别-->
+		<div class="scnr6" id="gllklb" style="height: 260px;">
+			<div class="zzd1 ">
+				<p class="zz-p1 ">管理报警类别</p>
+				<img src="img/del.png " class="del " />
+			</div>
+			<div class="zz-ew " style="height: 170px;">
+
+				<form method="get" class="form1"  id="bjlb_form">
+				</form>
+			</div>
+			<div class="xuanzeb ">
+				<button class="buttonm3 ">取消</button>
+				<button class="button4 ">确定</button>
+			</div>
+		</div>
+		<!--隐藏2，新建报警类别-->
+		<div class="scnr1" id="xinjianbjlb">
+			<div class="zzo1">
+				<p class="zz-p1">新建报警类别</p>
+				<img src="img/del.png" class="del" />
+			</div>
+			<div class="xiabian35">
+				<form method="get">
+					<label>类型名称</label><input type="text" />
+				</form>
+			</div>
+			<div class="xuanzejian" style="margin-top: 15px;">
+				<button class="dadaz1" >取消</button>
+				<button class="dada2">确定</button>
+			</div>
+		</div>
+		<div id="xjanlb_link" class="xinjianlkleb">+新建临控类别</div><!-- 临控类别 -->
+		<div id="xjanqy_link" class="xinjianqyleb">+新建临控区域</div><!-- 临控区域 -->
+		<div id="xjangj_link" class="xinjiangjleb">+新建临控人员</div><!-- 临控轨迹 -->
+		<div class="zhehza" id="baoqilai"></div>
+	</body>
+	<script src="js/xinjianlinkong.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

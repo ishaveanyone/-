@@ -1,0 +1,49 @@
+.jkgl {
+	width: 1200px;
+	height: 700px;
+	margin: 14px auto;
+}
+
+.jkgl-zhiti {
+	width: 850px;
+	height: 700px;
+	background: url(../img/tmbg.png);
+	float: left;
+	border-radius: 5px;
+}
+
+.jkgl-zhiti1 {
+	width: 1200px;
+	height: 650px;
+	background: url(../img/toumingbeijing.png);
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.left {
+	width: 1200px;
+	height: 700px;
+	float: left;
+}
+
+.kgl-zhiti {
+	width: 1200px;
+	height: 700px;
+}
+
+.zz {
+	width: 1200px;
+}
+
+.ai {
+	float: right;
+	margin-top: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+#tingwode9 {
+	width: 1200px;
+	height: 650px;
+	border-radius: 5px;
+}

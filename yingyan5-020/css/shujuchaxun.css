@@ -1,0 +1,242 @@
+.sjcx {
+	width: 1200px;
+	height:700px;
+	background: url(../img/tmbg.png);
+	margin: 14px auto;
+	border-radius: 5px;
+}
+
+.chaxunkuan {
+	width: 1200px;
+	height: 66px;
+}
+
+.chaxunkuan .label1 {
+	margin-left: 34px;
+}
+
+.chaxunkuan .label2 {
+	margin-left: 30px;
+}
+
+.chaxunkuan .label3 {
+	text-align: center;
+}
+
+.chaxunkuan label {
+	color: #8BC1DA;
+	font-family: "微软雅黑";
+	line-height: 66px;
+	width: 60px;
+	height: 66px;
+	display: inline-block;
+	text-align: right;
+	font-size: 14px;
+}
+
+.chaxunkuan input {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	width: 245px;
+	border-radius: 5px;
+	margin-left: 12px;
+	color: #8BC1DA;
+    font-family: "微软雅黑";
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 30px;
+}
+
+.chaxunkuan select {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	width: 270px;
+	border-radius: 5px;
+	margin-left: 5px;
+	color: #FEFEFE;
+	text-align: center;
+	height: 40px;
+}
+
+.noh {
+	border: 0;
+}
+
+.noh:hover {
+	background: transparent;
+}
+
+.noh td {
+	font-family: '微软雅黑';
+	font-size: 12px;
+	cursor: pointer;
+
+	color: rgba(255, 255, 255, 0.5);
+}
+.noh th {
+	font-family: '微软雅黑';
+	font-size: 12px;
+	height:15px;
+	width:12px;
+	background: none;
+	
+	margin-left: 20px;
+	position: relative;
+
+	color: rgba(255, 255, 255, 0.5);
+}
+.noh th label {
+	font-family: '微软雅黑';
+	font-size: 12px;
+	position: relative;
+	top: 0px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.5);
+}
+.noh td label {
+	font-family: '微软雅黑';
+	font-size: 12px;
+	position: relative;
+	width: 12px;
+	top: 0px;cursor: pointer;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+table {
+	width: 1200px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	
+	border-radius: 3px;
+}
+
+th {
+	height: 49px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: normal;
+	background: url(../img/tubg.png);
+	color: #8BC1DA;
+	text-align: center;
+	border-top: none;
+	border-left: none;
+	border-color: rgba(255, 255, 255, 0.2);
+	border-righ: none;
+}
+
+tr {
+	height: 49px;
+}
+
+tr:hover {
+	background: url(../img/tubg.png);
+	cursor: pointer;
+}
+
+.fenye {
+	height: 20px;
+	width: 500px;
+	margin: 10px auto;
+	border: none;
+}
+
+caption {
+	height: 34px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 34px;
+	font-weight: normal;
+	background: url(../img/tubg.png);
+	color: #8BC1DA;
+	text-align: center;
+	border-top: none;
+	border-left: none;
+}
+
+td {
+	height: 49px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	font-weight: normal;
+	color: #8BC1DA;
+	border-left: none;
+	border-top: none;
+	border-color: rgba(255, 255, 255, 0.2);
+	text-align: center;
+}
+
+.inp {
+	width: 40px;
+	height: 20px;
+	margin-left: 5px;
+	background: transparent;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	margin-right: 5px;
+}
+
+.fudong {
+	position: relative;
+	bottom: 40px;
+	width: 150px;
+	height: 40px;
+	float: right;
+}
+.fudong img
+{
+	float: left;
+	width: 25px;
+	height: 25px;
+}
+.fudong a
+{
+	color: #0d80d0;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	text-decoration: underline;
+	margin-left:8px;
+	float: left;
+	cursor: pointer;
+	display: block;
+	line-height: 24px;
+}
+.biubiu
+{
+	width: 140px;
+	height: 80px;
+	background: blue;
+}
+
+/**/
+
+.chaxunkuan2 {
+	width: 1200px;
+	height: 66px;
+}
+
+.chaxunkuan2 label {
+	color: #8BC1DA;
+	font-family: "微软雅黑";
+	line-height: 66px;
+	width: 60px;
+	height: 66px;
+	display: inline-block;
+	text-align: right;
+	font-size: 14px;
+}
+
+.noh .pzx
+{
+	font-family: '微软雅黑';
+	font-size: 12px;
+	height:15px;
+	width:50px;
+	background: none;
+	margin-left: 20px;
+	position: relative;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+

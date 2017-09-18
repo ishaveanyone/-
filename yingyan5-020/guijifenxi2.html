@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/shouye.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/guijifenxi.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+		<!--百度插件-->
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZFdF7ECds9crlgrkvmsbskairA7xkqbX"></script>
+		<link href="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>
+
+		<title>首页</title>
+	</head>
+
+	<body>
+
+		<!--监控管理主体-->
+
+		<div class="jkgl">
+			<div class="left">
+
+				<div class="kgl-zhiti">
+
+					<!--轨迹分析-->
+					<div class="kgl-zhiti" style="height: 700px;">
+
+						<!--小tip21-->
+						<div class="jkgl-zhiti1">
+							<div class="zz">
+								<p class="zz-p1">轨迹分析</p>
+								<img src="img/del.png" class="ai" onclick="window.location.href='shujuchaxun.html'" />
+							</div>
+
+							<div id="tingwode9"></div>
+							<!--百度地图-->
+							<!-- <script>
+								// 百度地图API功能
+								var map = new BMap.Map("tingwode9");
+
+								//启用滚轮放大缩小
+								var myP1 = new BMap.Point(116.380967, 39.913285); //起点
+								var myP2 = new BMap.Point(116.424374, 39.914668); //终点
+
+								map.enableScrollWheelZoom();
+								var driving2 = new BMap.DrivingRoute(map, {
+									renderOptions: {
+										map: map,
+										autoViewport: true
+									}
+								}); //驾车实例
+								driving2.search(myP1, myP2); //显示一条公交线路
+
+								window.run = function() {
+									var driving = new BMap.DrivingRoute(map); //驾车实例
+									driving.search(myP1, myP2);
+									driving.setSearchCompleteCallback(function() {
+										var pts = driving.getResults().getPlan(0).getRoute(0).getPath(); //通过驾车实例，获得一系列点的数组
+										var paths = pts.length; //获得有几个点
+
+										var carMk = new BMap.Marker(pts[0], {
+											icon: myIcon
+										});
+										map.addOverlay(carMk);
+										i = 0;
+
+										function resetMkPoint(i) {
+											carMk.setPosition(pts[i]);
+											if(i < paths) {
+												setTimeout(function() {
+													i++;
+													resetMkPoint(i);
+												}, 100);
+											}
+										}
+										setTimeout(function() {
+											resetMkPoint(5);
+										}, 100)
+
+									});
+								}
+
+								setTimeout(function() {
+									run();
+								}, 1500);
+								window.onload = loadJScript;
+							</script> -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<script type="text/javascript" src="js/guijifenxi.js"></script>
+	</body>
+</html>

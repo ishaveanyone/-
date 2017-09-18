@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/shouye.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jiankongguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/shujuchaxun.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<link rel="stylesheet" type="text/css" href="css/pingtaiguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/sbzt.css" />
+		<link rel="stylesheet" type="text/css" href="css/xianyiren.css" />
+		<link rel="stylesheet" type="text/css" href="css/yanpanpingtai.css" />
+		<link rel="stylesheet" type="text/css" href="css/zge.css" />
+		<link rel="stylesheet" type="text/css" href="css/xjlk.css" />
+		<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+		<script type="text/javascript" src="js/alertJs.js"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="My97DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>
+		<title>数据查询</title>
+	</head>
+
+	<body>
+		<!--背景-->
+		<img src="img/bg.png" class="background" />
+		<!--智能沙盘主体-->
+		<div class="sjcx">
+			<!--chaxunkuan-->
+			<div class="chaxunkuan2">
+				<form action="" method="get">
+					<label style="margin-left: 34px;width: 100px;">嫌疑人IMSI</label><input type="text" style="width: 255px;" />
+					<label style="margin-left: 40px;">查询时段</label><input type="text" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" style="width: 255px;" />
+					<label style="text-align: center;">至</label><input type="text" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" style="width: 255px;" />
+				</form>
+			</div>
+			<div class="waiwei">
+				<div class="waiwei-left">
+					<table border="1" cellspacing="0" cellpadding="0" style="width: 850px;">
+						<thead>
+							<th>IMEI</th>
+							<th>IMSI</th>
+							<th>手机号</th>
+							<th>时长</th>
+							<th>次数</th>
+							<th>采集时间</th>
+							<th style="display: none">操作</th>
+						</thead>
+					</table>
+					
+					<!--分页的table样式-->
+					<div class="fudong1">
+						<div>
+							<img src="img/lo.png" />
+							<a>群体名单</a>
+						</div>
+
+						<div>
+							<img src="img/lo.png" />
+							<a>黑名单</a>
+						</div>
+						
+						<div>
+							<img src="img/lo.png" />
+							<a>白名单</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="waiwei-right">
+					<div class="fenbushi1">
+						<div id="tf">
+							<img src="img/tianjia.png" />
+							<a class="fanglianjie1" href="javascript:void(0)" id="total_blank">群体分析</a>
+						</div>
+						
+						<div id="tl" style="display: none">
+							<img src="img/loading.gif" class="loading" />
+							<p class="wenzi" id="tp">1s</p>
+						</div>
+					</div>
+					<div class="fenbushi">
+						<div id="wf">
+							<img src="img/tianjia.png" />
+							<a class="fanglianjie1" href="javascript:void(0)" id="white_blank">增强分析</a>
+						</div>
+						<div id="wl" style="display: none">
+							<img src="img/loading.gif" class="loading"/>
+							<p class="wenzi1" id="wp">1s</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<img src="img/loading-big.gif" style="position:absolute;top:60px;left:45%;z-index:100;display: none" id="zzImg"/>
+		<div class="zhehza" id="baoqilai"></div><!-- 弹窗 -->
+		
+		<!-- 隐藏域 -->
+		<form style="display: none" id="select_paraForm">
+			<input id="method" name="method" value="queryDenseAreaCollectionData"/>
+			<input name="deviceNo"  id="deviceNo" value="0001"/>
+			<input id="type" name="type" value="0">
+			<input id="pageSize" name="pageSize" value="9"/>
+			<input id="pageNo" name="pageNo" value="1"/>
+			<input name="startTime" id="startTime1"/>
+		</form>
+		<form style="display: none" id="create_paraForm">
+			<input name="startTime" id="startTime"/>
+			<input id="method2" name="method" value="addDenseTask"/>
+			<input name="parentId" id="parentId"/>
+			<input name="type" id="type2"/>
+			<input name="deviceNo" id="deviceNo2" value="0001"/>
+		</form>
+		<script type="text/javascript" src="js/xianyirenliebiao.js"></script>
+	</body>
+</html>

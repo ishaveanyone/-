@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/shouye.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jiankongguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/shujuchaxun.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/xianyiren.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<link rel="stylesheet" type="text/css" href="css/yanpanpingtai.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/zhinengshaoan.css" />
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<title>智能沙盘</title>
+		<script src="My97DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--背景-->
+
+		<img src="img/bg.png" class="background" />
+		<!--智能沙盘主体-->
+		<div class="znsp">
+			<!--搜索-->
+			<div class="chaxunkuan1">
+				<form method="get">
+
+					<label style="margin-left: 34px;">手机号码</label><input type="text" />
+					<label style="margin-left: 30px;">设备编号</label><input type="text" />
+					<label style="margin-left: 30px;">查询时段</label><input type="text" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})"/>
+					<label>至</label><input type="text" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})"/>
+					<span class="biubiu">搜索</span>
+				</form>
+			</div>
+			<!--中间的大块-->
+			<div class="middle">
+				<div class="kuai2" id="k1">
+					<img src="img/tx_on.png" class="kuai1-img2" id="imgzx1" />
+					<p class="miaosu1" id="p1">商场（超市）型<br />小偷人物画像</p>
+				</div>
+				<div class="kuai2" id="k2">
+					<img src="img/tx_on.png" class="kuai1-img2" id="imgzx2" />
+					<p class="miaosu1" id="p2">人口密集型<br />扒手人物画像</p>
+				</div>
+				<div class="kuai2" id="k3">
+					<img src="img/tx_on.png" class="kuai1-img2" id="imgzx3" />
+					<p class="miaosu1" id="p3">公共交通型<br />扒手人物画像</p>
+				</div>
+			</div>
+
+			<!--中间添加 的一行-->
+			<div class="addrow">
+				<p>列表分类：</p>
+				<a class="xianyiren">嫌疑人列表</a>
+				<a class="pachu">排除嫌疑人列表</a>
+
+			</div>
+			<!--table-->
+			<table border="1" cellspacing="0" cellpadding="0" class="table4" style="height: 310px;margin-top: 10px;">
+				<tr>
+					<th>序号</th>
+					<th>可疑手机</th>
+					<th>姓名</th>
+					<th>采集点区域</th>
+					<th>采集时间段</th>
+					<th>采集量</th>
+					<th>最后采集时间</th>
+					<th>手动排出嫌疑</th>
+					<th>操作</th>
+
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>15678908909</td>
+					<td>张老三</td>
+					<td>玄武区</td>
+					<td>2017-01-12 12:00:00-2017-01-12 12:00:00</td>
+					<td>1000</td>
+					<td>雨花台区春江新城</td>
+					<td><img src="img/yjt.png" style="margin: 0 auto;" class="ck" /></td>
+					<td class="kankan">查看</td>
+
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>15678908909</td>
+					<td>张老三</td>
+					<td>玄武区</td>
+					<td>2017-01-12 12:00:00-2017-01-12 12:00:00</td>
+					<td>1000</td>
+					<td>雨花台区春江新城</td>
+					<td><img src="img/yjt.png" style="margin: 0 auto;" class="ck" /></td>
+					<td class="kankan">查看</td>
+
+				</tr>
+				
+				
+				<tr>
+					<td>1</td>
+					<td>15678908909</td>
+					<td>张老三</td>
+					<td>玄武区</td>
+					<td>2017-01-12 12:00:00-2017-01-12 12:00:00</td>
+					<td>1000</td>
+					<td>雨花台区春江新城</td>
+					<td><img src="img/yjt.png" style="margin: 0 auto;" class="ck" /></td>
+					<td class="kankan">查看</td>
+
+				</tr>
+
+				<tr>
+					<td>1</td>
+					<td>15678908909</td>
+					<td>张老三</td>
+					<td>玄武区</td>
+					<td>2017-01-12 12:00:00-2017-01-12 12:00:00</td>
+					<td>1000</td>
+					<td>雨花台区春江新城</td>
+					<td><img src="img/yjt.png" style="margin: 0 auto;" class="ck" /></td>
+					<td class="kankan">查看</td>
+
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>15678908909</td>
+					<td>张老三</td>
+					<td>玄武区</td>
+					<td>2017-01-12 12:00:00-2017-01-12 12:00:00</td>
+					<td>1000</td>
+					<td>雨花台区春江新城</td>
+					<td><img src="img/yjt.png" style="margin: 0 auto;" class="ck" /></td>
+					<td class="kankan">查看</td>
+
+				</tr>
+			</table>
+			<!--分页的table样式-->
+					<table border="0" cellspacing="0" cellpadding="0" class="fenye" style="position: relative;top: -20px;">
+				<tr class="noh">
+					<th>
+						&lt;</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<th>&gt;</th>
+					<th class="tiaozhuandao"><label>跳转到</label>
+						<input type="text" class="inp" />
+						<label class="go">GO</label></th>
+					<th><p>共<i style="margin:0 5px;">10</i>页</p></th>
+						
+				</tr>
+
+			</table>
+		</div>
+	</body>
+	<script src="js/xianyiren.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/shouye.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<link rel="stylesheet" type="text/css" href="css/jiankongguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/shujuchaxun.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="My97DatePicker/skin/default/datepicker.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/zge.css" />
+		<script src="My97DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/yanpanpingtai.css" />
+		<script type="text/javascript" src="js/alertJs.js"></script>
+		
+		<title>研判平台</title>
+	</head>
+	<body>
+		<!--背景-->
+		<img src="img/bg.png" class="background" />
+		<!--研判平台主体-->
+
+		<div class="sjcx">
+			<img src="img/y_top.png" class="zxv1" />
+			<div class="center-shujuzhanshi">
+				<p class="center-p1">运算数据量</p>
+				<p class="center-p2"></p>
+			</div>
+			<!--表格-->
+			<table border="1" cellspacing="0" cellpadding="0" style="margin-top: 3px;">
+				<thead>
+					<th>序号</th>
+					<th>采集点</th>
+					<th>归属地</th>		
+					<th>IMEI</th>
+					<th>IMSI</th>
+					<th>手机号</th>
+					<th>手机品牌</th>
+					<th>采集时间</th>
+					<th>时长</th>
+					<th>信号</th>
+					<th>采集量</th>
+				</thead>
+			</table>
+
+			<!--分页的table样式-->
+			<!-- <table border="0" cellspacing="0" cellpadding="0" class="fenye">
+				<tr class="noh">
+					<th>
+						&lt;</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<th>&gt;</th>
+					<th class="tiaozhuandao"><label>跳转到</label>
+						<input type="text" class="inp" />
+						<label class="go">GO</label></th>
+					<th><p>共<i style="margin:0 5px;">10</i>页</p></th>
+						
+				</tr>
+
+			</table> -->
+		</div>
+
+		<!--遮罩-->
+		<div class="zhehza" id="baoqilai">
+
+		</div>
+
+		<!--时间选择-->
+		<div class="scnr6" id="scnr6">
+
+			<div class="zzm1">
+				<p class="zz-p1">时间选择</p>
+				<img src="img/del.png" class="del" />
+			</div>
+			<div class="zzm-w">
+
+				<form method="get" class="form1">
+
+					<input type="checkbox" name="zx" class="chk" id="check1" /><label for="check1">起始时间</label><input type="text" class="zuo Wdate" placeholder="开始时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" /><label class="zhi">至</label><input type="text" class="zuo Wdate" placeholder="结束时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" />
+					<input type="checkbox" name="zx" class="chk" id="check2" /><label for="check2">起始时间</label><input type="text" class="zuo Wdate" placeholder="开始时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" /><label class="zhi">至</label><input type="text" class="zuo Wdate" placeholder="结束时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" />
+					<input type="checkbox" name="zx" class="chk" id="check3" /><label for="check3">起始时间</label><input type="text" class="zuo Wdate" placeholder="开始时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" /><label class="zhi">至</label><input type="text" class="zuo Wdate" placeholder="结束时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" />
+					<input type="checkbox" name="zx" class="chk" id="check4" /><label for="check4">起始时间</label><input type="text" class="zuo Wdate" placeholder="开始时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" /><label class="zhi">至</label><input type="text" class="zuo Wdate" placeholder="结束时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" />
+					<input type="checkbox" name="zx" class="chk" id="check5" /><label for="check5">起始时间</label><input type="text" class="zuo Wdate" placeholder="开始时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" /><label class="zhi">至</label><input type="text" class="zuo Wdate" placeholder="结束时间" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true})" />
+
+				</form>
+			</div>
+			<div class="xuanzeb" id="timerSelect">
+				<button class="buttonm3">取消</button>
+				<button class="button4">确定</button>
+			</div>
+		</div>
+		<!--交通工具选择-->
+		<div class="scnr1" id="scnr1">
+
+			<div class="zzn1">
+				<p class="zz-p1">交通工具选择</p>
+				<img src="img/del.png" class="del" />
+			</div>
+			<form method="get" class="form">
+			</form>
+			<div class="xuanzeb">
+				<button class="button1">取消</button>
+				<button class="button2">确定</button>
+			</div>
+		</div>
+		<!--设备选择-->
+		<div class="scnr5" id="scnr5">
+
+			<div class="zzq1">
+				<p class="zz-p1">设备选择</p>
+				<img src="img/del.png" class="del" />
+			</div>
+
+			<div class="zz-w">
+
+				<div class="zz-sousuo">
+					<form method="get">
+					 	<input type="text" class="fs"  style="color: #8BC1DA;font-family:'微软雅黑';"/><label class="fs2">搜索</label>
+						<!--<input type="checkbox" name="zx" class="zc" id="zc1" /><label class="cuol" for="zc1">设备A</label>
+						<input type="checkbox" name="zx" class="zc" id="zc2" /><label class="cuol" for="zc2">设备A</label>
+						<input type="checkbox" name="zx" class="zc" id="zc3" /><label class="cuol" for="zc3">设备A</label>
+						<input type="checkbox" name="zx" class="zc" id="zc4" /><label class="cuol" for="zc4">设备A</label> -->
+					</form>
+				</div>
+
+			</div>
+			<div class="xuanzeb">
+				<button class="button3">取消</button>
+				<button class="button4">确定</button>
+			</div>
+		</div>
+		<!--交通工具选择触发按钮-->
+		<div class="jtgxz">
+
+		</div>
+		<!--设备选择触发按钮-->
+		<div class="jtgxz1">
+
+		</div>
+		<!--时间选择触发按钮-->
+		<div class="jtgxz2">
+
+		</div>
+		<!--启动按钮触发按钮-->
+		<div class="jtgxz3" id="qidong">
+
+		</div>
+		<!--轨迹分析按钮触发按钮-->
+		<div class="jtgxz4">
+
+		</div>
+		<!--切块分析按钮触发按钮-->
+		<div class="jtgxz5">
+
+		</div>
+		
+		<div class="zhehza" id="baoqilai"></div><!-- 弹窗 -->
+		<!-- 隐含域 -->
+		<form style="display: none">
+			<input id="pageNo" value="1" name="pageNo">
+			<input id="pageSize" value="9" name="pageSize">
+		</form>
+	</body>
+
+	<script src="js/yanpanpingtai.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

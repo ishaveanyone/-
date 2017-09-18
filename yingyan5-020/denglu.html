@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<link rel="stylesheet" type="text/css" href="css/zge.css" />
+		<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+		<script type="text/javascript" src="js/alertJs.js"></script>
+		<title>登录</title>
+	</head>
+	
+	<body>
+		<!--背景-->
+		<img src="img/bg.png" class="background"/>
+		<!--logo-->
+		<div class="logo">
+			<img src="img/jinghui.png" />
+		</div>
+		<!--鹰眼技侦系统-->
+		<p class="title">鹰眼移动终端数据管控系统</p>
+		<!--光线-->
+		<div class="guangxian">
+		</div>
+		<!--主体-->
+		<div class="zhuti">
+			<p class="yhdl">用户登录</p>
+			<div class="content" id="content">
+				<form action="" method="get">
+					<p class="tishi" id="tishi">抱歉登录失败，请重新再试</p>
+					<input type="text" placeholder="用户名" class="one" style="color:white;font-family: '微软雅黑';"/>
+					<input type="password" placeholder="密码" class="two" style="color:white;font-family: '微软雅黑';"/>
+					<input type="text" placeholder="验证码" class="yonghuming" style="color:white;font-family: '微软雅黑';"/><label class="yanzhengma"><img src="http://101.200.141.234:8877/hawkeye/common/getVerifyCode?width=150&height=50" id="imgCode"/></label>
+					<br />
+					<input type="checkbox"id="mlp" value="记住密码" class="yanz" /><label class="remm" for="mlp">记住账号和密码</label>
+					<br />
+					<input type="button" value="登录" class="denglu"/>
+				</form>
+			</div>
+		</div>
+		<!--版权所有-->
+		<p class="bqsy">版权所有©公司</p>
+		<script src="js/denglu.js"></script>
+	</body>
+</html>

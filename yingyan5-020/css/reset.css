@@ -1,0 +1,36 @@
+iframe,body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,a,p,textarea{
+	margin:0;
+	padding:0;
+	font-family:Verdana, Geneva, sans-serif;
+	}
+	/*去掉默认样式*/
+ol,ul,li{
+		list-style:none;
+		}
+	/*<!--	去掉a标签的下划线样式-->*/
+a{
+	text-decoration:none;
+	display:block;  /*//设置成块状元素*/
+	}
+	
+img{
+		border:none;
+		display:block;/*//设置成块状元素*/
+		}
+
+.clearfloat{
+	zoom: 1;
+}
+	
+.clearfloat:after {
+	display:block;
+	clear:both;
+	content:"";
+	visibility:hidden;
+	height:0;
+}
+
+<!--是分页table下面被点击数字的样式-->
+.fyck{
+	background-color: #0d80d0;
+}

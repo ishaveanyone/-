@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/shujuchaxun.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/yangshi.css"/>
+		<link rel="stylesheet" type="text/css" href="css/yanpanpingtai.css" />
+		<link rel="stylesheet" type="text/css" href="css/zge.css" />
+		<link rel="stylesheet" type="text/css" href="css/shouye.css"/>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="My97DatePicker/WdatePicker.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/alertJs.js"></script>
+		<title>数据查询</title>
+	</head>
+	<body>
+		<img src="img/bg.png" class="background" />
+		<!--数据查询主体-->
+		<div class="sjcx">
+			<!--chaxunkuan-->
+			<div class="chaxunkuan">
+				<form method="get">
+					<label class="label1">IMSI</label><input type="text" class="pn"/>
+					<label class="label2">查询时段</label><input type="text"onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true,errDealMode:1 })" />
+					<label class="label3">至</label><input type="text" onFocus="WdatePicker({startDate:'%y-%M-01 00:00:00',dateFmt:'yyyy-MM-dd HH:mm:ss',alwaysUseStartDate:true,errDealMode:1 })" />
+					<button type="button" id="ssBtn" class="button5" style="width: 70px;height: 32px;cursor: pointer;">搜索</button>
+				</form>
+			</div>
+
+			<!--表格-->
+			<table border="1" cellspacing="0" cellpadding="0">
+				<thead class="tr1">
+					<th>序号</th>
+					<th>设备编号</th>
+					<th>采集点</th>
+					<th>归属地</th>					
+					<th>IMEI</th>
+					<th>IMSI</th>
+					<th>手机号</th>
+					<th>手机品牌</th>
+					<th>采集时间</th>
+					<th>时长</th>
+					<th>信号</th>
+					<th>采集量</th>
+				</thead>
+			</table>
+				<!--分页的table样式-->
+					<!-- <table border="0" cellspacing="0" cellpadding="0" class="fenye">
+				<tr class="noh">
+					<th>
+						&lt;</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<th>&gt;</th>
+					<th class="tiaozhuandao"><label>跳转到</label>
+						<input type="text" class="inp" />
+						<label class="go">GO</label></th>
+					<th><p>共<i style="margin:0 5px;">10</i>页</p></th>
+						
+				</tr> 
+
+			</table>
+			<div class="fudong">
+				<img src="img/daochu.png" />
+				<a>导出数据</a>
+			</div>-->
+		</div>
+		<!-- 隐含域用于存放数据 -->
+		<form id="paramForm" style="display: none">
+			<!-- 请求方法 -->
+			<input type="text" name="method" value="queryPhoneCollectionData">queryPhoneCollectionData
+			<!-- 分页参数 -->
+			<input type="text" id="pageSize" value="10" name="pageSize" /> 
+			<input type="text" id="pageNo" value="1" name="pageNo" />
+			<!-- 查询参数 -->
+			<input type="text" id="phone" name="imsi"/> 
+			<input type="text" id="startTime" name="startTime"> 
+			<input type="text" id="endTime" name="endTime">
+		</form>
+		<div class="zhehza" id="baoqilai"></div><!-- 弹窗 -->
+	</body>
+	<script src="js/shujuchaxun.js" type="text/javascript" charset="utf-8"></script>
+</html>

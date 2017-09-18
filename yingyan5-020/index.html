@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>首页</title>
+	</head>
+	<body>
+		<!--背景-->
+
+		<img src="img/bg.png" class="background" />
+		<!--导航栏-->
+		<div class="xuanze">
+			<a href="javascript:void(0)" class="pk1">首页</a>
+			<a href="javascript:void(0)">数据查询</a>
+			<a href="javascript:void(0)">研判平台</a>
+
+			<img src="img/jinghui.png" class="jinghui" />
+			<a href="javascript:void(0)">临控管理</a>
+			<a href="javascript:void(0)">智能沙盘</a>
+			<a href="javascript:void(0)">系统管理</a>
+			<img src="img/mrtx.png" class="tox" />
+			<div style="cursor: pointer;" id="userOP">
+				
+				<p class="mc">刘一峰</p>
+				<img src="img/wodexiala.png" class="wodexiala" /></div>
+
+		</div>
+		<!--下拉查看，点击包括修改密码和退出登录-->
+		<div class="tx_xiala" id="xialachakan">
+			<div class="xiala-top">
+				<img src="img/xgmm.png" />
+				<p id="xiugaimima">修改密码</p>
+			</div>
+			<div class="xiala-bottom">
+				<img src="img/tcdl.png" />
+				<p>退出登录</p>
+			</div>
+		</div>
+
+		<!--分割线-->
+		<div class="fengexian">
+
+		</div>
+		<!--框架的切换实现-->
+		<iframe src="zhuyao.html" scrolling="no" id="if1" frameborder="0" class="iframe"></iframe>
+
+		<!--遮罩-->
+		<div class="zhehza1" id="baoqilai1">
+
+		</div>
+
+		<!--消息弹窗-->
+		<div class="scnr6" id="xiaoxitanchuang">
+
+			<div class="zz1" style="width: 260px;">
+				<p class="zz-p1" style="width: 260px;text-align: center;">消息</p>
+
+			</div>
+
+			<div class="caijixiaoxi" id="websocket_message">
+				<!-- <p>出现13801230123的手机号</p>
+				<p>张三于2017-01-01 12:30:30被采集</p> -->
+			</div>
+
+			<div class="zuicia">
+				<p class="pz1" id="close_frame">关闭</p>
+				<p class="pz2" id="look_detile">查看详情</p>
+			</div>
+
+		</div>
+		<!--隐藏的部分-->
+
+		<!--隐藏2，修改密码-->
+		<div class="scnr1" id="xgmm">
+			<div class="zz1" style="width: 450px;">
+				<p class="zz-p1">修改密码</p>
+				<img src="img/del.png" class="del" />
+			</div>
+			<div class="xiabian">
+				<form method="get">
+					<label>旧密码</label><input type="text" />
+					<label style="margin-top: 5px;">新密码</label><input type="text" />
+					<label style="margin-top: 5px;">确认密码</label><input type="text" />
+				</form>
+			</div>
+			<div class="xuanzejian" style="margin-top: 15px;">
+				<button class="dada1">取消</button>
+				<button class="dada2">确定</button>
+			</div>
+		</div>
+		<!--遮罩-->
+		<div class="zhehza" id="baoqilai">
+
+		</div>
+	</body>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/webscoket.js"></script>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/shouye.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/denglu.css" />
+		<link rel="stylesheet" type="text/css" href="css/jiankongguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/shujuchaxun.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/zge.css" />
+		<link rel="stylesheet" type="text/css" href="css/yanpanpingtai.css" />
+		<link rel="stylesheet" type="text/css" href="css/pingtaiguanli.css" />
+		<link rel="stylesheet" type="text/css" href="css/sbzt.css" />
+		<link rel="stylesheet" type="text/css" href="css/yanpanpingtai.css" />
+		<link rel="stylesheet" type="text/css" href="css/xjlk.css" />
+		
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" src="js/webscoket.js"></script>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+		<script type="text/javascript" src="js/alertJs.js"></script>
+		<!--百度插件-->
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZFdF7ECds9crlgrkvmsbskairA7xkqbX"></script>
+		<link href="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>
+		<title>监控管理</title>
+	</head>
+
+	<body>
+		<!--背景-->
+		<img src="img/bg.png" class="background" />
+		<!--监控管理主体-->
+		<div class="sjcx">
+			<div class="kgl-zhiti">
+				<!--小tip1-->
+				<div class="jkgl-zhiti1">
+					<div class="zz">
+						<p class="zz-p1">实时位置</p>
+						<div class="pl">
+							<img src="img/icon_add.png" class="ass" />
+							<p class="zz-p2">新建临控</p>
+						</div>
+					</div>
+					<!--搜索-->
+					<div class="mokuai2">
+						<form method="get">
+
+							<input type="text" class="input" />
+						</form>
+						<span class="zhenshi">搜索</span>
+					</div>
+					<!--表格-->
+					<table border="1" cellspacing="0" cellpadding="0" class="table3" id="dataTable">
+						<thead>
+							<th>被控<br />姓名</th>
+							<th>被控IMEI</th>
+							<th>被控IMSI</th>
+							<th>被控<br />号码</th>
+							<th>临控<br />类别</th>
+							<th>临控<br />类型</th>
+							<th>采集<br />轨迹</th>
+							<th>监控状态</th>
+							<th>操作</th>
+						</thead>
+					</table>
+					<!--分页的table样式-->
+				</table>
+				</div>
+				<!--
+			   	作者：2755472259@qq.com
+			   	时间：2017-02-24
+			   	描述：报警类别
+			   -->
+				<div class="bjlb ">
+					<div class="zz " style="margin-top: 20px;">
+						<p class="zzm-p1">报警类别</p>
+
+					</div>
+					<!--搜索-->
+
+					<div class="hole">
+						<label class="xiaola1" style="position: relative;top: -10px;">报警类别</label>
+						<div type="text" class="lv2" style="position: relative;top: 0;">
+							<!--这是数据回传时的展现形式-->
+							<p id="ckBJLB">短信提醒</p>
+						</div>
+						<label class="gl" id="guanli5"style="position: relative;top: -10px;">管理</label>
+					</div>
+				</div>
+
+				<div class="shishiditum">
+					<div id="tingwode4" style="width: 340px;height:680px;"></div>
+				</div>
+			</div>
+		</div>
+
+		<!--遮罩-->
+		<div class="zhehza" id="baoqilai">
+
+		</div>
+		<!--临控人员详情-->
+		<div class="scnr6" id="reyuanxiangqing">
+
+			<div class="zzw1 ">
+				<p class="zz-p1 ">临控人员详情</p>
+				<img src="img/del.png " class="del " />
+			</div>
+			<table border="1 " cellspacing="0 " cellpadding="0 " class="table98 ">
+				<tr>
+					<th>姓名</th>
+					<th>IMEI</th>
+					<th>IMSI</th>
+					<th>号码</th>
+					<th>临控类别</th>
+					<th>临控类型</th>
+					<th>状态</th>
+					<th>临控时间</th>
+				</tr>
+				<tr id="detile">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		
+		<!--管理临控类别-->
+		<div class="scnr6" id="gllklb">
+			<div class="zzd1 ">
+				<p class="zz-p1 ">管理报警类别</p>
+				<img src="img/del.png " class="del" />
+			</div>
+			<div class="zz-ew">
+				<form method="get" class="form1" id="bjlb_form">
+					
+				</form>
+			</div>
+			<div class="xuanzeb ">
+				<button class="buttonm3 ">取消</button>
+				<button class="button4 ">确定</button>
+			</div>
+		</div>
+			<!--隐藏2，新建报警类别-->
+		<div class="scnr1" id="xinjianbjlb">
+			<div class="zzo1">
+				<p class="zz-p1">新建报警类别</p>
+				<img src="img/del.png" class="del" />
+			</div>
+			<div class="xiabian35">
+				<form method="get">
+					<label>类型名称</label><input type="text" />
+				</form>
+			</div>
+			<div class="xuanzejian" style="margin-top: 15px;">
+				<button class="dadaz1">取消</button>
+				<button class="dada2">确定</button>
+			</div>
+		</div>
+		
+		<div class="zhehza" id="baoqilai"></div><!-- 弹窗 -->
+		<form style="display: none" id="paramForm">
+			<input name="method" id="method" value="queryHawkeyeTemporaryControlPage">
+			<input name="pageSize" id="pageSize" value="7">
+			<input name="pageNo" id="pageNo" value="1">
+		</form>
+	</body>
+	<script src="js/linkongguanl.js" type="text/javascript" charset="utf-8"></script>
+</html>

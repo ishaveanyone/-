@@ -1,0 +1,335 @@
+.xuanze {
+	width: 1302px;
+	height: 66px;
+	margin: 20px auto 0px;
+}
+
+.xuanze .pk1 {
+	margin-left: 235px;
+	color: #00A8DF;
+}
+
+.xuanze a {
+	float: left;
+	width: 65px;
+	margin-left: 62px;
+	color: #828485;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	text-align: center;
+	line-height: 66px;
+}
+
+.jinghui {
+	width: 66px;
+	height: 66px;
+	float: left;
+	margin-left: 62px;
+}
+
+.tox {
+	float: left;
+	width: 38px;
+	height: 38px;
+	margin-top: 12px;
+	margin-left: 82px;
+}
+
+.mc {
+	font-size: 12px;
+	font-family: "微软雅黑";
+	margin-left: 8px;
+	color: #828485;
+	line-height: 66px;
+	width: 40px;
+	float: left;
+
+	
+	text-decoration: underline;
+	margin-right: 10px;
+}
+
+.wodexiala {
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin-top: 26px;
+}
+
+.tx_xiala {
+	width: 149px;
+	background: transparent;
+	height: 150px;
+	border-radius: 5px;
+	position: absolute;
+	display: none;
+	right: 18.5%;
+	z-index: 100;
+	top: 70px;
+}
+
+.xiala-top {
+	width: 150px;
+	height: 40px;
+	background: url(../img/chakan.png);
+}
+
+.xiala-top img {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-left: 12px;
+	margin-top: 12px;
+}
+
+.xiala-top p {
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #FEFEFE;
+	font-family: "微软雅黑";
+	margin-left: 5px;
+	float: left;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.xiala-bottom {
+	width: 150px;
+	height: 35px;
+	background: #0097c8;
+}
+
+.xiala-bottom img {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-left: 12px;
+	margin-top: 10px;
+}
+
+.xiala-bottom p {
+	width: 80px;
+	height: 40px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 40px;
+	color: #FEFEFE;
+	font-family: "微软雅黑";
+	margin-left: 5px;
+	float: left;
+	font-size: 14px;
+}
+
+.fengexian {
+	width: 1302px;
+	height: 14px;
+	margin: 8px auto;
+	background: url(../img/xiantiao.png);
+}
+
+.iframe {
+	margin: 0 auto;
+	width: 1200px;
+	height: 850px;
+	display: block;
+	clear: both;
+}
+
+.zhehza1 {
+	width: 100%;
+	height: 130px;
+	background: #000000;
+	position: absolute;
+	top: 0;
+	display: none;
+	left: 0;
+	opacity: 0.6;
+	z-index: 5;
+}
+
+.scnr6 {
+	width: 450px;
+	height: 450px;
+	z-index: 20;
+	margin-left: 32%;
+	position: absolute;
+	top: 60px;
+	border-radius: 10px;
+	background: #273a43;
+}
+
+#xiaoxitanchuang {
+	display: none;
+	width: 260px;
+	height: 180px;
+	position: fixed;
+	top: 74%;
+	right: 1%;
+}
+
+.zz1 {
+	width: 1200px;
+	height: 34px;
+	background: url(../img/tubg.png);
+}
+
+.zz-p1 {
+	font-family: "微软雅黑";
+	color: #8bc1da;
+	font-size: 14px;
+	line-height: 34px;
+	width: 100px;
+	text-align: center;
+	height: 34px;
+	float: left;
+}
+
+.caijixiaoxi {
+	width: 260px;
+	height: 80px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin-top: 10px;
+}
+
+.caijixiaoxi p {
+	width: 260px;
+	font-family: "微软雅黑";
+	height: 30px;
+	line-height: 30px;
+	color: #8BC1DA;
+	text-align: center;
+	font-size: 13px;
+}
+
+.zuicia {
+	width: 260px;
+	height: 55px;
+}
+
+.zuicia p {
+	float: left;
+	width: 129px;
+	height: 55px;
+	line-height: 55px;
+	cursor: pointer;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+.pz1 {
+	color: #FEFEFE;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pz2 {
+	color: #0097C8;
+}
+
+.scnr1 {
+	width: 450px;
+	height: 450px;
+	z-index: 20;
+	margin-left: 35%;
+	position: absolute;
+	top:60px;
+	border-radius: 10px;
+	background: #273a43;
+}
+
+#xgmm {
+	display: none;
+	margin-top: 150px;
+	height: 250px;
+}
+
+.del {
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.xiabian {
+	width: 450px;
+	height: 140px;
+	background: transparent;
+	margin-top: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.xiabian label {
+	font-family: "微软雅黑";
+	color: #8bc1da;
+	font-size: 15px;
+	line-height: 44px;
+	width: 100px;
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	text-align: right;
+	height: 34px;
+}
+
+.xiabian input {
+	width: 260px;
+	height: 30px;
+	padding-left: 15px;
+	margin-left: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #8bc1da;
+	background: transparent;
+	border-radius: 5px;
+}
+
+.xuanzejian {
+	float: right;
+	width: 220px;
+	height: 50px;
+	margin-right: 30px;
+}
+
+.dada1 {
+	width: 100px;
+	float: left;
+	height: 40px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+	background: url(../img/tubg.png);
+	text-align: center;
+	color: #FEFEFE;
+	line-height: 40px;
+	opacity: 0.8;
+}
+
+.dada2 {
+	width: 100px;
+	float: left;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background: #00a8df;
+	text-align: center;
+	color: #FEFEFE;
+	line-height: 40px;
+	margin-left: 10px;
+}
+
+.zhehza {
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	position: absolute;
+	top: 0;
+	display: none;
+	left: 0;
+	opacity: 0.8;
+	z-index: 1;
+}
+
+.hide{
+	
+	display: block;
+}

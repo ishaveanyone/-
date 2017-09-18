@@ -1,0 +1,133 @@
+.ptgl {
+	width: 1200px;
+	height: 700px;
+	background: url(../img/tmbg.png);
+	margin: 14px auto;
+	border-radius: 5px;
+}
+
+
+
+.zzo1 {
+	width: 450px;
+	height: 34px;
+	background: url(../img/tubg.png);
+}
+
+.zzd1 {
+	width: 420px;
+	height: 34px;
+	background: url(../img/tubg.png);
+}
+
+.zzw1 {
+	width: 820px;
+	height: 50px;
+	background: url(../img/tubg.png);
+}
+
+.zzq1 {
+	width: 350px;
+	height: 34px;
+	background: url(../img/tubg.png);
+}
+
+.zzn1 {
+	width: 260px;
+	height: 34px;
+	background: url(../img/tubg.png);
+}
+#reyuanxiangqing{
+	height: 160px;
+}
+.zzm1 {
+	width: 420px;
+	height: 34px;
+	background: url(../img/tubg.png);
+}
+
+.baioge1 {
+	width: 1170px;
+	height: 205px;
+	border-radius: 5px;
+	background: transparent;
+	margin: 10px auto;
+}
+
+.baiogem1 {
+	width: 1170px;
+	height: 575px;
+	border-radius: 5px;
+	background: transparent;
+	margin: 10px auto;
+}
+
+.baiogen1 {
+	width: 1170px;
+	height: 210px;
+	border-radius: 5px;
+	background: transparent;
+	margin:20px auto;
+}
+
+.baioge100 {
+	width: 1170px;
+	height: 60px;
+	border-radius: 5px;
+	background: url(../img/tubg.png);
+	margin: 0 auto;
+}
+
+.baioge3 {
+	width: 1170px;
+	height: 325px;
+	border-radius: 5px;
+	background: url(../img/tubg.png);
+	margin: 10px auto;
+}
+
+.table5 {
+	width: 1170px;
+	height: 140px;
+	border-radius: 3px;
+}
+
+.del {
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.chakan {
+	float: left;
+	margin-left: 35px;
+	color: #0D80D0;
+	text-decoration: underline;
+	font-family: '微软雅黑';
+	font-size: 14px;
+	margin-top: -2px;
+}
+
+.chakan1 {
+	float: left;
+	margin-left: 35px;
+	color: #0D80D0;
+	text-decoration: underline;
+	font-family: '微软雅黑';
+	font-size: 14px;
+}
+
+.table8 .chuagjianz {
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	width: 120px;
+	height: 30px;
+}
+
+.table8 .miaoshu {
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	width: 120px;
+	height: 180px;
+	vertical-align: top;
+	padding-top: 20px;
+}
